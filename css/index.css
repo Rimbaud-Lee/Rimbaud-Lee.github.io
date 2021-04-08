@@ -3275,6 +3275,13 @@ blockquote footer cite:before {
   -moz-background-size: cover;
   background-size: cover;
 }
+#footer:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  content: '';
+}
 #footer-wrap {
   position: relative;
   padding: 2rem 1rem;
@@ -4945,6 +4952,12 @@ _:future,
 #vcomment .vcards .vcard .vcontent.expand:after,
 #waline .vcards .vcard .vcontent.expand:after {
   z-index: 22;
+}
+#vcomment textarea {
+  background: url("/img/comment_bg.png") 100% 100% no-repeat;
+}
+#vcomment textarea:focus {
+  background-image: none;
 }
 .fireworks {
   position: fixed;
