@@ -6,12 +6,12 @@ setInterval(() => {
     let second = timestamp - create_time;
     let time = new Array(0, 0, 0, 0, 0);
     if (second >= 365 * 24 * 3600) {
-      time[0] = parseInt(second / (365 * 24 * 3600));
-      second %= 365 * 24 * 3600;
+        time[0] = parseInt(second / (365 * 24 * 3600));
+        second %= 365 * 24 * 3600;
     }
     if (second >= 24 * 3600) {
-      time[1] = parseInt(second / (24 * 3600));
-      second %= 24 * 3600;
+        time[1] = parseInt(second / (24 * 3600));
+        second %= 24 * 3600;
     }
     if (second >= 3600) {
         time[2] = parseInt(second / 3600);
