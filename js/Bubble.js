@@ -1,6 +1,6 @@
 function a () {
     // 气泡
-  function qipao() {
+    function qipao() {
     $('#page-header').circleMagic({
         radius: 10,
         density: .2,
