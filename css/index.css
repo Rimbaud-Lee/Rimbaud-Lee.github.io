@@ -178,6 +178,37 @@ template {
 [hidden] {
   display: none
 }
+@font-face {
+  font-family: 'sleek';
+  src: url("https://cdn.jsdelivr.net/gh/lete114/CDN2/zaxiang/sleek.woff2");
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #c9f;
+  background-image: -webkit--webkit-linear-gradient(45deg, rgba(255,255,255,0.4) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0.4) 75%, transparent 75%, transparent);
+  background-image: -webkit--moz-linear-gradient(45deg, rgba(255,255,255,0.4) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0.4) 75%, transparent 75%, transparent);
+  background-image: -webkit--o-linear-gradient(45deg, rgba(255,255,255,0.4) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0.4) 75%, transparent 75%, transparent);
+  background-image: -webkit--ms-linear-gradient(45deg, rgba(255,255,255,0.4) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0.4) 75%, transparent 75%, transparent);
+  background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.4) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0.4) 75%, transparent 75%, transparent);
+  border-radius: 2em;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+::-moz-selection {
+  color: #fff;
+  background-color: #c9f;
+}
+canvas:not(#ribbon-canvas),
+#web_bg {
+  margin-bottom: -0.4rem;
+  display: block;
+/* width: 100%;
+    height: 200px; */
+}
 .limit-one-line,
 #article-container .flink .flink-list > .flink-list-item a .flink-item-name,
 #article-container .flink .flink-list > .flink-list-item a .flink-item-desc,
@@ -1340,7 +1371,7 @@ body {
   background: var(--global-bg);
   color: var(--font-color);
   font-size: var(--global-font-size);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: sleek;
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
