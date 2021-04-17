@@ -1,9 +1,7 @@
-/* 自定义字体 */
 @font-face {
   font-family: 'sleek';
   src: url("https://cdn.jsdelivr.net/gh/lete114/CDN2/zaxiang/sleek.woff2");
 }
-/* 滚动条 */
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
