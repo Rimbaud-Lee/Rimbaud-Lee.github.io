@@ -226,8 +226,8 @@ canvas:not(#ribbon-canvas),
 }
 .limit-more-line,
 .article-sort-item-title,
-#recent-posts > .recent-post-item >.recent-post-info > .article-title,
-#recent-posts > .recent-post-item >.recent-post-info > .content,
+#recent-posts > .recent-post-item >.recent-post-info > .recent-post-info-top > .article-title,
+#recent-posts > .recent-post-item >.recent-post-info > .recent-post-info-top > .content,
 #error-wrap .error-content .error-info .error_subtitle,
 #aside-content .aside-list > .aside-list-item .content > .name,
 #aside-content .aside-list > .aside-list-item .content > .title,
@@ -1946,7 +1946,7 @@ blockquote footer cite:before {
   border-color: #2e2e2e;
 }
 .article-sort-item-time {
-  color: #2b2b2b;
+  color: #2e2e2e;
   font-size: 95%;
 }
 .article-sort-item-time time {
@@ -2027,7 +2027,7 @@ blockquote footer cite:before {
 }
 #page .category-lists .category-list .category-list-count {
   margin-left: 0.4rem;
-  color: #2b2b2b;
+  color: #2e2e2e;
 }
 #page .category-lists .category-list .category-list-count:before {
   content: '(';
@@ -2341,7 +2341,7 @@ blockquote footer cite:before {
 #recent-posts > .recent-post-item >.recent-post-info.no-cover {
   width: 100%;
 }
-#recent-posts > .recent-post-item >.recent-post-info > .article-title {
+#recent-posts > .recent-post-item >.recent-post-info > .recent-post-info-top > .article-title {
   margin-bottom: 0.3rem;
   color: var(--text-highlight-color);
   font-size: 1.43em;
@@ -2354,11 +2354,11 @@ blockquote footer cite:before {
   -webkit-line-clamp: 2;
   font-weight: bold;
 }
-#recent-posts > .recent-post-item >.recent-post-info > .article-title:hover {
+#recent-posts > .recent-post-item >.recent-post-info > .recent-post-info-top > .article-title:hover {
   color: #b4045f;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap {
-  color: #2b2b2b;
+  color: #2e2e2e;
   font-size: 90%;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .post-meta-date {
@@ -2383,13 +2383,14 @@ blockquote footer cite:before {
   margin: 0 0.2rem;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap a {
-  color: #2b2b2b;
+  color: #2e2e2e;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap a:hover {
   color: #b4045f;
   text-decoration: underline;
 }
-#recent-posts > .recent-post-item >.recent-post-info > .content {
+#recent-posts > .recent-post-item >.recent-post-info > .recent-post-info-top > .content {
+  line-height: 1.4;
   margin-top: 0.3rem;
   -webkit-line-clamp: 3;
 }
@@ -2427,10 +2428,10 @@ blockquote footer cite:before {
   #recent-posts .recent-post-item .recent-post-info.no-cover {
     padding: 1.5rem 1rem;
   }
-  #recent-posts .recent-post-item .recent-post-info .article-title {
+  #recent-posts .recent-post-item .recent-post-info.recent-post-info-top > .article-title {
     font-size: 1.43em;
   }
-  #recent-posts .recent-post-item .recent-post-info .content {
+  #recent-posts .recent-post-item .recent-post-info.recent-post-info-top > .content {
     height: auto;
   }
 }
@@ -2867,7 +2868,7 @@ blockquote footer cite:before {
 #aside-content .aside-list > .aside-list-item .content > time,
 #aside-content .aside-list > .aside-list-item .content > .name {
   display: block;
-  color: #2b2b2b;
+  color: #2e2e2e;
   font-size: 85%;
 }
 #aside-content .aside-list > .aside-list-item .content > .title,
@@ -4355,7 +4356,7 @@ _:future,
   overflow-wrap: break-word;
 }
 #article-container a {
-  color: #2b2b2b;
+  color: #2e2e2e;
 }
 #article-container a:hover {
   text-decoration: underline;
