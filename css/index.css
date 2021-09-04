@@ -1333,8 +1333,8 @@ canvas:not(#ribbon-canvas),
   --global-font-size: 14px;
   --global-bg: #fff;
   --font-color: #4c4948;
-  --hr-border: #d2ebfd;
-  --hr-before-color: #bfe4fb;
+  --hr-border: #979797;
+  --hr-before-color: #6d6d6d;
   --search-bg: #f6f8fa;
   --search-input-color: #4c4948;
   --search-result-title: #4c4948;
@@ -1347,10 +1347,10 @@ canvas:not(#ribbon-canvas),
   --tab-button-active-bg: #fff;
   --card-bg: #fff;
   --sidebar-bg: #f6f8fa;
-  --btn-hover-color: #ff7242;
+  --btn-hover-color: #2e2e2e;
   --btn-color: #fff;
-  --btn-bg: #c9f;
-  --text-bg-hover: #c9f;
+  --btn-bg: #b4045f;
+  --text-bg-hover: #b4045f;
   --light-grey: #eee;
   --white: #fff;
   --text-highlight-color: #1f2d3d;
@@ -1387,6 +1387,19 @@ body {
 }
 input::placeholder {
   color: var(--font-color);
+}
+#web_bg {
+  position: fixed;
+  z-index: -999;
+  width: 100%;
+  height: 100%;
+  background: url(https://rimbaud-lee.github.io/img/matthew-henry-T-G9PVLOfOY-unsplash.jpg);
+  background-attachment: local;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 h1,
 h2,
@@ -1457,7 +1470,7 @@ table td {
   vertical-align: middle;
 }
 *::selection {
-  background: #00c4b6;
+  background: #b4045f;
   color: #f7f7f7;
 }
 button {
@@ -1479,7 +1492,7 @@ a {
   overflow-wrap: break-word;
 }
 a:hover {
-  color: #c9f;
+  color: #b4045f;
 }
 .is-center {
   text-align: center;
@@ -1564,7 +1577,7 @@ img:not([src]) {
   text-decoration: none !important;
 }
 figure.highlight table::-webkit-scrollbar-thumb {
-  background: #1d202c;
+  background: #121212;
 }
 figure.highlight pre .deletion {
   color: #bf42bf;
@@ -1576,7 +1589,7 @@ figure.highlight pre .meta {
   color: #c792ea;
 }
 figure.highlight pre .comment {
-  color: #676e95;
+  color: #969896;
 }
 figure.highlight pre .variable,
 figure.highlight pre .attribute,
@@ -1639,7 +1652,7 @@ figure.highlight pre .javascript .function {
   color: #c792ea;
 }
 #article-container figure.highlight .line.marked {
-  background-color: rgba(113,124,180,0.314);
+  background-color: rgba(97,97,97,0.314);
 }
 #article-container figure.highlight table {
   display: block;
@@ -1653,8 +1666,8 @@ figure.highlight pre .javascript .function {
 #article-container figure.highlight .gutter pre {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
-  background-color: #292d3e;
-  color: rgba(166,172,205,0.5);
+  background-color: #212121;
+  color: rgba(238,255,255,0.5);
   text-align: right;
 }
 #article-container figure.highlight .code pre {
@@ -1667,8 +1680,8 @@ figure.highlight pre .javascript .function {
   overflow: auto;
   margin: 0 0 1rem;
   padding: 0;
-  background: #292d3e;
-  color: #a6accd;
+  background: #212121;
+  color: #eff;
   line-height: 1.6;
 }
 blockquote {
@@ -1711,7 +1724,7 @@ blockquote footer cite:before {
 #article-container pre code {
   padding: 0;
   background: none;
-  color: #a6accd;
+  color: #eff;
   text-shadow: none;
 }
 #article-container figure.highlight {
@@ -1732,11 +1745,11 @@ blockquote footer cite:before {
 #article-container figure.highlight .caption a {
   float: right;
   padding-right: 10px;
-  color: #a6accd;
+  color: #eff;
 }
 #article-container figure.highlight figcaption a:hover,
 #article-container figure.highlight .caption a:hover {
-  border-bottom-color: #a6accd;
+  border-bottom-color: #eff;
 }
 #article-container .highlight-tools {
   position: relative;
@@ -1755,8 +1768,8 @@ blockquote footer cite:before {
   overflow: hidden;
   min-height: 1.2rem;
   height: 2.15em;
-  background: #252938;
-  color: #a6accd;
+  background: #1c1c1c;
+  color: rgba(238,255,255,0.8);
   font-size: 14px;
 }
 #article-container .highlight-tools.closed + table {
@@ -1821,7 +1834,7 @@ blockquote footer cite:before {
   transition: color 0.2s;
 }
 #article-container .highlight-tools .copy-button:hover {
-  color: #c9f;
+  color: #b4045f;
 }
 #article-container .gutter {
   -webkit-user-select: none;
@@ -1838,7 +1851,7 @@ blockquote footer cite:before {
 .article-sort {
   margin-left: 0.5rem;
   padding-left: 1rem;
-  border-left: 2px solid #fff;
+  border-left: 2px solid #fa2493;
 }
 .article-sort-title {
   position: relative;
@@ -1848,7 +1861,7 @@ blockquote footer cite:before {
   font-size: 1.72em;
 }
 .article-sort-title:hover:before {
-  border-color: #ff7242;
+  border-color: #2e2e2e;
 }
 .article-sort-title:before {
   position: absolute;
@@ -1857,7 +1870,7 @@ blockquote footer cite:before {
   z-index: 1;
   width: 0.5rem;
   height: 0.5rem;
-  border: 0.25rem solid #c9f;
+  border: 0.25rem solid #b4045f;
   border-radius: 0.5rem;
   background: var(--card-bg);
   content: '';
@@ -1875,7 +1888,7 @@ blockquote footer cite:before {
   z-index: 0;
   width: 0.1rem;
   height: 1.5em;
-  background: #fff;
+  background: #fa2493;
   content: '';
 }
 .article-sort-item {
@@ -1900,14 +1913,14 @@ blockquote footer cite:before {
   transition: all 0.2s ease-in-out;
 }
 .article-sort-item:hover:before {
-  border-color: #ff7242;
+  border-color: #2e2e2e;
 }
 .article-sort-item:before {
   position: absolute;
   left: calc(-1rem - 17px);
   width: 0.3rem;
   height: 0.3rem;
-  border: 0.15rem solid #c9f;
+  border: 0.15rem solid #b4045f;
   border-radius: 0.3rem;
   background: var(--card-bg);
   content: '';
@@ -1927,13 +1940,13 @@ blockquote footer cite:before {
   font-size: 1.43em;
 }
 .article-sort-item.year:hover:before {
-  border-color: #c9f;
+  border-color: #b4045f;
 }
 .article-sort-item.year:before {
-  border-color: #ff7242;
+  border-color: #2e2e2e;
 }
 .article-sort-item-time {
-  color: #858585;
+  color: #2b2b2b;
   font-size: 95%;
 }
 .article-sort-item-time time {
@@ -1951,7 +1964,7 @@ blockquote footer cite:before {
   -webkit-line-clamp: 2;
 }
 .article-sort-item-title:hover {
-  color: #c9f;
+  color: #b4045f;
   -webkit-transform: translateX(10px);
   -moz-transform: translateX(10px);
   -o-transform: translateX(10px);
@@ -2010,11 +2023,11 @@ blockquote footer cite:before {
   color: var(--font-color);
 }
 #page .category-lists .category-list a:hover {
-  color: #c9f;
+  color: #b4045f;
 }
 #page .category-lists .category-list .category-list-count {
   margin-left: 0.4rem;
-  color: #858585;
+  color: #2b2b2b;
 }
 #page .category-lists .category-list .category-list-count:before {
   content: '(';
@@ -2048,13 +2061,13 @@ blockquote footer cite:before {
   top: 0.7em;
   width: 0.43em;
   height: 0.43em;
-  border: 0.215em solid #c9f;
+  border: 0.215em solid #b4045f;
   border-radius: 0.43em;
   background: transparent;
   content: '';
 }
 #page .category-lists ul li:hover:before {
-  border-color: #ff7242;
+  border-color: #2e2e2e;
 }
 .layout {
   display: -webkit-box;
@@ -2254,11 +2267,15 @@ blockquote footer cite:before {
   background: var(--card-bg);
   -webkit-box-shadow: var(--card-box-shadow);
   box-shadow: var(--card-box-shadow);
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+#recent-posts > .recent-post-item > .recent-post-info > .recent-post-info-top > .article-title {
+  font-size: 1.43em;
+  font-weight: bold;
 }
 @media screen and (max-width: 768px) {
   #recent-posts > .recent-post-item {
@@ -2301,11 +2318,11 @@ blockquote footer cite:before {
 #recent-posts > .recent-post-item .post_cover img.post_bg {
   width: 100%;
   height: 100%;
-  -webkit-transition: all 0.6s;
-  -moz-transition: all 0.6s;
-  -o-transition: all 0.6s;
-  -ms-transition: all 0.6s;
-  transition: all 0.6s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
   object-fit: cover;
 }
 #recent-posts > .recent-post-item .post_cover img.post_bg:hover {
@@ -2327,7 +2344,7 @@ blockquote footer cite:before {
 #recent-posts > .recent-post-item >.recent-post-info > .article-title {
   margin-bottom: 0.3rem;
   color: var(--text-highlight-color);
-  font-size: 1.72em;
+  font-size: 1.43em;
   line-height: 1.4;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -2335,12 +2352,13 @@ blockquote footer cite:before {
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   -webkit-line-clamp: 2;
+  font-weight: bold;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-title:hover {
-  color: #c9f;
+  color: #b4045f;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap {
-  color: #858585;
+  color: #2b2b2b;
   font-size: 90%;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .post-meta-date {
@@ -2365,10 +2383,10 @@ blockquote footer cite:before {
   margin: 0 0.2rem;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap a {
-  color: #858585;
+  color: #2b2b2b;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap a:hover {
-  color: #c9f;
+  color: #b4045f;
   text-decoration: underline;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .content {
@@ -2416,6 +2434,52 @@ blockquote footer cite:before {
     height: auto;
   }
 }
+@media screen and (min-width: 768px) {
+  #recent-posts .recent-post-item {
+    height: 15em;
+  }
+  #recent-posts .recent-post-item > .recent-post-info > .recent-post-info-top > .content {
+    visibility: hidden;
+    -webkit-transition: 0.1s linear;
+    -moz-transition: 0.1s linear;
+    -o-transition: 0.1s linear;
+    -ms-transition: 0.1s linear;
+    transition: 0.1s linear;
+    line-height: 1.4;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  #recent-posts .recent-post-item > .recent-post-info > .recent-post-info-top > .content::after {
+    content: "";
+  }
+  #recent-posts .recent-post-item:hover .recent-post-info > .recent-post-info-top > .content {
+    visibility: visible;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    transition: 0.2s linear;
+    line-height: 1.4;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+  #recent-posts .recent-post-item:hover .recent-post-info > .recent-post-info-top > .content::after {
+    content: " 😄😄";
+  }
+  #recent-posts .recent-post-item:hover .recent-post-info > .article-meta-wrap {
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    transition: 0.2s linear;
+    margin-top: 5px;
+    color: rgba(133,133,133,0.7);
+  }
+}
 .tag-cloud-list a {
   display: inline-block;
   padding: 0 0.4rem;
@@ -2426,7 +2490,7 @@ blockquote footer cite:before {
   transition: all 0.3s;
 }
 .tag-cloud-list a:hover {
-  color: #c9f !important;
+  color: #b4045f !important;
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
@@ -2524,7 +2588,7 @@ blockquote footer cite:before {
   height: 100%;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
-  background-color: #c9f;
+  background-color: #b4045f;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2733,7 +2797,7 @@ blockquote footer cite:before {
   padding: 0 0.1rem;
 }
 #aside-content .card-tag-cloud a:hover {
-  color: #c9f !important;
+  color: #b4045f !important;
 }
 #aside-content .aside-list > span {
   display: block;
@@ -2803,7 +2867,7 @@ blockquote footer cite:before {
 #aside-content .aside-list > .aside-list-item .content > time,
 #aside-content .aside-list > .aside-list-item .content > .name {
   display: block;
-  color: #858585;
+  color: #2b2b2b;
   font-size: 85%;
 }
 #aside-content .aside-list > .aside-list-item .content > .title,
@@ -2815,7 +2879,7 @@ blockquote footer cite:before {
 }
 #aside-content .aside-list > .aside-list-item .content > .title:hover,
 #aside-content .aside-list > .aside-list-item .content > .comment:hover {
-  color: #c9f;
+  color: #b4045f;
 }
 #aside-content .aside-list > .aside-list-item.no-cover {
   min-height: 4.4em;
@@ -2980,8 +3044,8 @@ blockquote footer cite:before {
   transition: all 0.2s ease-in-out;
 }
 #aside-content #card-toc .toc-content .toc-link.active {
-  border-left-color: #009d92;
-  background: #00c4b6;
+  border-left-color: #90034c;
+  background: #b4045f;
   color: #fff;
 }
 #aside-content #card-toc .toc-content:before {
@@ -3299,7 +3363,7 @@ blockquote footer cite:before {
 }
 #footer {
   position: relative;
-  background: #c9f;
+  background: #b4045f;
   background-attachment: local;
   background-position: bottom;
   -webkit-background-size: cover;
@@ -3337,7 +3401,7 @@ blockquote footer cite:before {
 #page-header {
   position: relative;
   width: 100%;
-  background-color: #c9f;
+  background-color: #b4045f;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -3507,7 +3571,7 @@ blockquote footer cite:before {
 #page-header.nav-fixed #nav a:hover,
 #page-header.nav-fixed #nav #site-name:hover,
 #page-header.nav-fixed #nav #toggle-menu:hover {
-  color: #c9f;
+  color: #b4045f;
 }
 #page-header.nav-visible #nav {
   -webkit-transition: all 0.5s;
@@ -3604,7 +3668,7 @@ _:future,
   transition: all 0.3s ease-out;
 }
 #post-info #post-meta a:hover {
-  color: #c9f;
+  color: #b4045f;
   text-decoration: underline;
 }
 #nav {
@@ -3713,7 +3777,7 @@ _:future,
   z-index: -1;
   width: 0;
   height: 3px;
-  background-color: #dbb8ff;
+  background-color: #fa2091;
   content: '';
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -4205,7 +4269,7 @@ _:future,
   cursor: pointer;
 }
 #pagination .page-number.current {
-  background: #f6c;
+  background: #b4045f;
   color: var(--white);
   cursor: default;
 }
@@ -4291,7 +4355,7 @@ _:future,
   overflow-wrap: break-word;
 }
 #article-container a {
-  color: #99a9bf;
+  color: #2b2b2b;
 }
 #article-container a:hover {
   text-decoration: underline;
@@ -4361,7 +4425,7 @@ _:future,
 #article-container.post-content h4:hover:before,
 #article-container.post-content h5:hover:before,
 #article-container.post-content h6:hover:before {
-  color: #c9f;
+  color: #b4045f;
 }
 #article-container.post-content h1 {
   padding-left: 1.4rem;
@@ -4490,7 +4554,7 @@ _:future,
   position: absolute;
   top: 0;
   left: 0;
-  background: #c9f;
+  background: #b4045f;
   color: #fff;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-out;
@@ -4517,13 +4581,13 @@ _:future,
   padding: 0.2em 0.2em 0.2em 1.4em;
 }
 #article-container.post-content ul > li:not(.tab):hover:before {
-  border-color: #ff7242;
+  border-color: #2e2e2e;
 }
 #article-container.post-content ul > li:not(.tab):before {
   top: 0.78em;
   width: 0.42em;
   height: 0.42em;
-  border: 0.21em solid #c9f;
+  border: 0.21em solid #b4045f;
   border-radius: 0.42em;
   background: transparent;
   content: '';
@@ -4537,9 +4601,9 @@ _:future,
   margin: 0.4rem 0.4rem 0.4rem 0;
   padding: 0 0.6rem;
   width: fit-content;
-  border: 1px solid #c9f;
+  border: 1px solid #b4045f;
   border-radius: 0.6rem;
-  color: #c9f;
+  color: #b4045f;
   font-size: 0.85em;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -4548,7 +4612,7 @@ _:future,
   transition: all 0.2s ease-in-out;
 }
 #post .tag_share .post-meta__tags:hover {
-  background: #c9f;
+  background: #b4045f;
   color: var(--white);
 }
 #post .tag_share .post_share {
@@ -4582,7 +4646,7 @@ _:future,
   position: absolute;
   top: 0.1rem;
   right: 0.6rem;
-  color: #c9f;
+  color: #b4045f;
   content: '\f1f9';
   font-size: 1rem;
 }
@@ -4591,7 +4655,7 @@ _:future,
   box-shadow: 0 0 8px 0 rgba(232,237,250,0.6), 0 2px 4px 0 rgba(232,237,250,0.5);
 }
 #post .post-copyright .post-copyright-meta {
-  color: #c9f;
+  color: #b4045f;
   font-weight: bold;
 }
 #post .post-copyright .post-copyright-info {
@@ -4925,7 +4989,7 @@ _:future,
   width: 75%;
 }
 #sidebar #sidebar-menus .menus_items .site-page span:hover {
-  color: #c9f;
+  color: #b4045f;
 }
 #sidebar #sidebar-menus .menus_items .expand {
   position: absolute;
@@ -5369,7 +5433,7 @@ blockquote.pullquote.right {
 .hide-block > .hide-button {
   display: inline-block;
   padding: 0.3rem 1rem;
-  background: #c9f;
+  background: #b4045f;
   color: var(--white);
 }
 .hide-inline > .hide-button.open,
@@ -5767,7 +5831,7 @@ blockquote.pullquote.right {
   width: 1.5em;
 }
 #article-container .tabs > .nav-tabs > .tab.active button {
-  border-top: 2px solid #c9f;
+  border-top: 2px solid #b4045f;
   background: var(--tab-button-active-bg);
   cursor: default;
 }
