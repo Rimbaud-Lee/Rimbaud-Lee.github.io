@@ -14,7 +14,6 @@
 */
 
 
-
 /* 滚动条 */
 ::-webkit-scrollbar {
   width: 8px;
@@ -48,4 +47,24 @@
 ::-moz-selection {
   color: #fff;
   background-color: #49b1f5;
+}
+
+
+/*电子时钟去除时钟背景*/
+/* 
+#aside-content.aside-content > .sticky_layout > .card-widget.card-clock > .card-glass > .card-background {
+    background-color: unset ;
+    box-shadow: unset ;
+} 
+*/
+
+
+/*哔哩哔哩视频适配*/
+.aspect-ratio {position: relative;width: 100%;height: 0;padding-bottom: 75%;margin: 3% auto;text-align: center;}      
+.aspect-ratio iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
 }
