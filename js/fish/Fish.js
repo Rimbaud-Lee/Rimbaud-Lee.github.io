@@ -14,8 +14,7 @@ function myFn () {
             '<div class="container" id="jsi-flying-fish-container"></div>'
         ),
         $("body").append(
-            '<script src="/js/fish/jsdelivr.fish.js"></script>'
-            //https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fish.js
+            '<script src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fish.js"></script>'
         ),
         this
         );
