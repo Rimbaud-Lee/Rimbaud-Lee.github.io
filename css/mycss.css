@@ -1195,7 +1195,7 @@
   background: url(https://img02.anzhiy.cn/adminuploads/1/2022/09/25/632fb9cecfc8c.png);
 }
 .author-content-item.game-yuanshen::after {
-  box-shadow: 0 -69px 203px 11px #2d2d2de6 inset;
+  box-shadow: 0 -69px 203px 11px #2d2d2d8d inset; /* 0 -69px 203px 11px #2d2d2d8d inset; */
   position: absolute;
   content: "";
   width: 100%;
@@ -1213,7 +1213,7 @@
   color: var(--anzhiyu-white); /* 字体颜色 violet */
 }
 .author-content-item.comic-content::after {
-  box-shadow: 0 -48px 203px 11px #00081f65 inset; /* 蒙版颜色及透明度 none */
+  box-shadow: none; /* 蒙版颜色及透明度 0 -48px 203px 11px #00081f65 inset; none; */
   position: absolute;
   content: "";
   width: 100%;
@@ -1230,7 +1230,7 @@
 }
 
 .author-content-item.like-music {
-  background: url(https://s1.ax1x.com/2023/02/03/pSsxb4O.jpg) /* https://p2.music.126.net/Mrg1i7DwcwjWBvQPIMt_Mg==/79164837213438.jpg */
+  background: url(https://s1.ax1x.com/2023/02/04/pSynli4.jpg) /*   https://p2.music.126.net/Mrg1i7DwcwjWBvQPIMt_Mg==/79164837213438.jpg */
   no-repeat top;
   background-size: cover;
   min-height: 400px;
@@ -1245,7 +1245,7 @@
 }
 
 .author-content-item.like-music::after {
-  box-shadow: 0 -69px 203px 11px #3023e8c6 inset; /* 0 -69px 203px 11px #3023e8c6 inset; */
+  box-shadow: 0 -69px 203px 11px #1105b186 inset; /* 0 -69px 203px 11px #1105b186 inset; */
   position: absolute;
   content: "";
   width: 100%;
