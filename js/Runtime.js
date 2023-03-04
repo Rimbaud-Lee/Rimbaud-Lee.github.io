@@ -1,5 +1,5 @@
 setInterval(() => {
-    let create_time = Math.round(new Date('2021-1-26 00:00:00').getTime() / 1000); //在此行修改建站时间
+    let create_time = Math.round(new Date('2021-4-8 00:00:00').getTime() / 1000); //在此行修改建站时间
     // let timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
     //上面为UTC+8,若发现不同步可以改为以下这行
     let timestamp = Math.round((new Date().getTime()) / 1000);
